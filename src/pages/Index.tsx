@@ -383,7 +383,7 @@ export default function LandingPage() {
                   className="text-2xl font-bold"
                   style={{ color: COLORS.primary }}
                 >
-                  📘 Fale com Medo Mesmo — apenas R$ XX,XX
+                  📘 Fale com Medo Mesmo — apenas R$ 37,00
                 </h3>
                 <p className="text-lg" style={{ color: COLORS.secondary }}>
                   Pagamento único, acesso imediato em PDF.
@@ -481,7 +481,7 @@ export default function LandingPage() {
               className="hover:scale-110 transition-transform duration-300"
               style={{ color: COLORS.secondary }}
             >
-              Hotmart
+              Kiwify
             </a>
           </div>
 

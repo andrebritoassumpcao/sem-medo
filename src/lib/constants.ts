@@ -8,8 +8,7 @@ export const COLORS = {
   text: "#5E5E5E",
 };
 
-export const HOTMART_LINK =
-  "https://hotmart.com/pt-br/marketplace/produtos/fale-com-medo-mesmo";
+export const HOTMART_LINK = "https://pay.kiwify.com.br/skc4azY";
 
 export const SOCIAL_LINKS = {
   instagram: "https://instagram.com/envolvasi",
