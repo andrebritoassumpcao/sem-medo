@@ -1,11 +1,9 @@
 export const COLORS = {
-  background: "#F7F4EF",
-  primary: "#1E4C66",
-  secondary: "#5A7B8C",
-  accent: "#D9A441",
-  accentHover: "#B88A2D",
-  subtle: "#EADFEA",
-  text: "#5E5E5E",
+  primary: "#280139", // Primária escura
+  secondary: "#F1EAF4", // Secundária clara (backgrounds suaves)
+  accent: "#002147", // Acento/contraste
+  text: "#333333", // Texto padrão
+  textLight: "#666666", // Texto secundário
 };
 
 export const HOTMART_LINK = "https://pay.kiwify.com.br/skc4azY";
