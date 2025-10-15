@@ -73,7 +73,7 @@ export default function LandingPage() {
               <img
                 src="/assets/profile-student.jpg"
                 alt="Pessoa confiante falando em público"
-                className="relative rounded-3xl shadow-2xl w-full h-auto object-cover"
+                className="relative rounded-3xl shadow-2xl w-full h-auto object-cover transform scale-90"
               />
             </div>
           </div>
@@ -299,20 +299,17 @@ export default function LandingPage() {
       </section>
 
       {/* Conteúdo do E-book Section - Texto à esquerda, grid à direita */}
-      <section className="py-20 px-6">
+      <section
+        className="py-20 px-6"
+        style={{ backgroundColor: COLORS.primary }}
+      >
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-5 gap-12 items-start">
             <div className="lg:col-span-2 space-y-6">
-              <h2
-                className="text-3xl md:text-4xl font-bold"
-                style={{ color: COLORS.primary }}
-              >
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
                 📘 O que você vai encontrar no e-book
               </h2>
-              <p
-                className="text-xl leading-relaxed"
-                style={{ color: COLORS.accent }}
-              >
+              <p className="text-xl leading-relaxed text-white">
                 Fale com Medo Mesmo é um guia prático e direto, sem enrolação.
               </p>
 
@@ -320,12 +317,12 @@ export default function LandingPage() {
                 onClick={handleCTAClick}
                 size="lg"
                 className="text-white font-semibold px-8 py-4 text-lg rounded-lg hover:scale-105 transition-all duration-300 shadow-lg"
-                style={{ backgroundColor: COLORS.primary }}
+                style={{ backgroundColor: COLORS.accent }}
                 onMouseEnter={(e) =>
-                  (e.currentTarget.style.backgroundColor = COLORS.accent)
+                  (e.currentTarget.style.backgroundColor = "#001a3d")
                 }
                 onMouseLeave={(e) =>
-                  (e.currentTarget.style.backgroundColor = COLORS.primary)
+                  (e.currentTarget.style.backgroundColor = COLORS.accent)
                 }
               >
                 Quero meu e-book agora
@@ -368,7 +365,7 @@ export default function LandingPage() {
                         <div style={{ color: COLORS.primary }}>{item.icon}</div>
                       </div>
                       <p
-                        className="leading-relaxed"
+                        className="text-base sm:text-lg md:text-lg font-medium leading-relaxed"
                         style={{ color: COLORS.text }}
                       >
                         {item.text}
@@ -393,7 +390,7 @@ export default function LandingPage() {
               className="text-3xl md:text-4xl font-bold mb-6"
               style={{ color: COLORS.primary }}
             >
-              ❌ Quebrando as objeções
+              ❓ Dúvidas Frequentes
             </h2>
           </div>
 
@@ -494,23 +491,54 @@ export default function LandingPage() {
                   </p>
 
                   <div
-                    className="p-4 rounded-lg border-2 border-dashed"
+                    className="p-4 rounded-lg border-2 border-dashed text-left"
                     style={{
                       backgroundColor: COLORS.secondary,
                       borderColor: COLORS.accent,
                     }}
                   >
                     <Badge
-                      className="mb-2 text-sm font-semibold"
+                      className="mb-4 text-sm font-semibold"
                       style={{ backgroundColor: COLORS.accent, color: "white" }}
                     >
                       <Clock className="w-4 h-4 mr-2" />
                       OFERTA ESPECIAL DE LANÇAMENTO
                     </Badge>
-                    <p className="font-medium" style={{ color: COLORS.text }}>
-                      ⚡ Por tempo limitado, quem adquirir o e-book leva também
-                      um checklist exclusivo de preparação rápida.
-                    </p>
+
+                    <div className="space-y-3" style={{ color: COLORS.text }}>
+                      <p className="font-semibold">
+                        ⚡ Por tempo limitado, quem adquirir o e-book leva
+                        também:
+                      </p>
+
+                      <div className="space-y-2 text-sm">
+                        <p>
+                          <strong>Bônus 1 - Medo ou Fobia</strong>
+                          <br />
+                          Neste bônus, você aprenderá a distinguir entre o
+                          nervosismo natural e quando a intensidade do medo pode
+                          indicar a necessidade de acompanhamento especializado.
+                        </p>
+
+                        <p>
+                          <strong>
+                            Bônus 2 - Exercícios de Meditação e Respiração
+                          </strong>
+                          <br />
+                          Este guia prático contém exercícios específicos de
+                          meditação e respiração que você pode aplicar nos
+                          minutos ou horas que antecedem sua apresentação.
+                        </p>
+
+                        <p>
+                          <strong>Bônus 3 - Para cada medo, uma solução</strong>
+                          <br />
+                          Um guia de consulta rápida que lista os medos mais
+                          comuns de quem precisa falar em público e apresenta
+                          soluções específicas para cada um.
+                        </p>
+                      </div>
+                    </div>
                   </div>
 
                   <Button
