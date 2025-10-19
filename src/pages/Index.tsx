@@ -43,8 +43,8 @@ export default function LandingPage() {
                   style={{ color: COLORS.text }}
                 >
                   Mesmo que você ainda sinta medo, este guia mostra como
-                  transformar nervosismo em energia e segurança diante de
-                  qualquer público.
+                  reduzi-lo, controlá-lo e, ainda, como evitar eventuais
+                  problemas na sua apresentação
                 </p>
               </div>
 
